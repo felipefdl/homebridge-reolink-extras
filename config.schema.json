@@ -1,0 +1,45 @@
+{
+  "pluginAlias": "ReolinkExtras",
+  "pluginType": "platform",
+  "singular": true,
+  "schema": {
+    "type": "object",
+    "properties": {
+      "cameras": {
+        "type": "array",
+        "items": {
+          "title": "Camera",
+          "type": "object",
+          "properties": {
+            "name": {
+              "title": "Name",
+              "type": "string",
+              "placeholder": "Enter camera name...",
+              "required": true
+            },
+            "ip": {
+              "title": "IP",
+              "type": "string",
+              "default": "192.168.4.X",
+              "placeholder": "Enter camera ip...",
+              "required": true
+            },
+            "user": {
+              "title": "user",
+              "type": "string",
+              "default": "admin",
+              "placeholder": "Enter camera user...",
+              "required": true
+            },
+            "password": {
+              "title": "password",
+              "type": "string",
+              "placeholder": "Enter camera password...",
+              "required": true
+            }
+          }
+        }
+      }
+    }
+  }
+}
